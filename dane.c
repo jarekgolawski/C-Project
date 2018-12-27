@@ -5,7 +5,7 @@
 
 #define BUFSIZE 8192
 
-void wczytaj_dane(int argc, char** argv, dane d) {
+void wczytaj_dane(int argc, char** argv, dane *d) {
 	char line[80];
 
 	FILE *in= argc > 1 ? fopen( argv[1], "r" ) : stdin;
@@ -14,5 +14,7 @@ void wczytaj_dane(int argc, char** argv, dane d) {
 		fprintf( stderr, "%s, błąd: nie mogę odczytać pliku %s\n", argv[0], argv[1] );
 	}
 	
-	printf("Jestem w funkcji");
+	d -> wsp = atof(fgets(line,BUFSIZE,in));
+	d -> mp = atof(fgets(line,BUFSIZE,in));
+	d -> cpow = atof(fgets(line,BUFSIZE,in));
 }

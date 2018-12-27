@@ -10,6 +10,6 @@ typedef struct dane_jeden{
 	double rt; // roznica temperatur definiujaca koniec symulacji
 } dane;
 
-void wczytaj_dane(int argc, char **argv, dane d);
+void wczytaj_dane(int argc, char **argv, dane *d);
 
 #endif
