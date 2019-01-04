@@ -1,6 +1,8 @@
-wczytaj.o: wczytaj.c wczytaj.h
-		gcc -c wczytaj.c
+dane.o: dane.c dane.h
+	gcc -c dane.c
 main.o: main.c 
-		gcc -c main.c
-main: main.o wczytaj.o
-		gcc wczytaj.o main.o -o main
+	gcc -c main.c
+main: main.o dane.o
+	gcc dane.o main.o -o main
+test: main
+	./main dane

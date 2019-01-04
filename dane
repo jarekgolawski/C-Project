@@ -1,6 +1,6 @@
-11
-12
-13
-14
-15
-16
+11 <- wspolczynnik przewodnictwa cieplnego
+12 <- masa preta
+13 <- calkowita powierzchnia preta
+14 <- cieplo wlasciwe preta
+15 <- masa cieczy chlodzacej
+16 <- roznica tempertur deiniujaca koniec symulacji

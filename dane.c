@@ -6,6 +6,7 @@
 #define BUFSIZE 8192
 
 void wczytaj_dane(int argc, char** argv, dane *d) {
+	
 	char line[80];
 
 	FILE *in= argc > 1 ? fopen( argv[1], "r" ) : stdin;
